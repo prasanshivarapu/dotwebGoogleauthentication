@@ -1,0 +1,39 @@
+.wel {
+  background-color: #31aeb5;
+  height: 60vh;
+  margin: 10px;
+  min-width: 300px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.rent {
+  color: white;
+  text-align: center;
+}
+.come {
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 10px;
+  margin-left: 20px;
+}
+.para {
+  color: white;
+  font-size: 20px;
+  width: 280px;
+  margin: 20px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+@media screen and (min-width: 776px) {
+  .wel {
+    width: 50%;
+    height: 100vh;
+  }
+  .para {
+    width: 500px;
+  }
+}

@@ -1,0 +1,202 @@
+.dea {
+  padding: 5px;
+  width: 100%;
+}
+.down {
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+}
+.imge {
+  height: 50px;
+}
+.add {
+  font-size: 20px;
+  color: white;
+  padding-left: 10px;
+}
+.button {
+  background-color: blue;
+  color: white;
+  width: 85px;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.Emp {
+  background-color: rgb(236, 120, 120);
+  height: 35px;
+  width: 320px;
+  margin-bottom: 10px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+}
+.file1 {
+  height: 100px;
+  width: 400px;
+
+  color: white;
+}
+.file {
+  cursor: pointer;
+  height: 150px;
+
+  border: dashed;
+  border-color: green;
+}
+.clm {
+  display: flex;
+  flex-direction: column;
+}
+.gender {
+  height: 20px;
+}
+.co {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 20px;
+  margin-bottom: 5px;
+}
+
+.ress {
+  width: 95%;
+  height: 40px;
+  border: solid;
+  border-color: silver;
+  border-width: 2px;
+  border-radius: 5px;
+}
+.male {
+  width: 300px;
+}
+.addr {
+  width: 90%;
+}
+.gen {
+  list-style: none;
+}
+.firstname {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 90%;
+}
+.inputevent {
+  width: 300px;
+  height: 35px;
+  border: solid;
+  border-color: rgb(202, 198, 198);
+  border-radius: 5px;
+  border-width: 1px;
+  margin-bottom: 5px;
+  margin-top: 3px;
+}
+.form {
+  width: 100%;
+  padding: 20px;
+}
+.label {
+  color: silver;
+}
+@media screen and (min-width: 776px) {
+  .add {
+    font-size: 20px;
+    color: white;
+    padding-left: 10px;
+  }
+  .Emp {
+    background-color: rgb(236, 120, 120);
+    height: 35px;
+    width: 110%;
+    margin-bottom: 10px;
+  }
+  .logo {
+    display: flex;
+    flex-direction: column;
+  }
+  .file1 {
+    height: 100px;
+    width: 400px;
+
+    color: white;
+  }
+  .file {
+    cursor: pointer;
+    height: 150px;
+    width: 90%;
+    border: dashed;
+    border-color: green;
+  }
+  .clm {
+    display: flex;
+    flex-direction: column;
+  }
+  .gender {
+    height: 20px;
+  }
+  .co {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20px;
+  }
+  .dea {
+    padding: 5px;
+  }
+  .button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px;
+  }
+  .down {
+    display: flex;
+    justify-content: space-between;
+
+    width: 90%;
+  }
+  .ress {
+    width: 90%;
+    height: 40px;
+  }
+  .male {
+    width: 300px;
+  }
+  .addr {
+    width: 90%;
+  }
+  .gen {
+    list-style: none;
+  }
+  .firstname {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+  }
+  .inputevent {
+    width: 300px;
+    height: 35px;
+    border: solid;
+    border-color: rgb(202, 198, 198);
+    border-radius: 5px;
+    border-width: 1px;
+  }
+  .form {
+    width: 90%;
+    padding: 20px;
+  }
+  .label {
+    color: silver;
+  }
+}
