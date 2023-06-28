@@ -43,8 +43,7 @@ const GoogleAuth = () => {
 
   return (
     <div>
-      {" "}
-      <button onClick={login}>G</button>}
+      <button onClick={login}>G</button>
     </div>
   );
 };
