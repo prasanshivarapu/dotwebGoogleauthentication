@@ -13,7 +13,7 @@ const SignupForm = () => {
   const [btn, setBtn] = useState(false);
   const [input1, setInput1] = useState("");
   const [password1, setPassword1] = useState("");
-  const [error, seterror] = useState(false);
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
 
@@ -23,6 +23,7 @@ const SignupForm = () => {
   const handleRecaptchaChange = (value) => {
     setCaptchaValue(value);
   };
+
   const inputText = (event) => {
     setInput1(event.target.value);
   };
@@ -41,9 +42,16 @@ const SignupForm = () => {
     if (input1 === "prasan" && password1 === "prasan" && captchaValue !== "") {
       Cookies.set("token", 1234, { expires: 30 });
       console.log(Cookies.get("token") === undefined);
+      setError("");
       navigate("/fill");
     } else {
-      seterror(true);
+      if (input1 !== "prasan" || password1 !== "prasan") {
+        setError("Username and password not matched");
+      } else if (captchaValue === "") {
+        setError("Please verify the captcha");
+      } else {
+        setError("");
+      }
     }
   };
   useEffect(() => {
@@ -53,7 +61,8 @@ const SignupForm = () => {
   }, []);
 
   const bt = btn ? <AiOutlineEye /> : <AiOutlineEyeInvisible />;
-  const E = error ? "Username and password not matched" : "";
+
+  // const E = error ? "Username and password not matched" : "verify captcha";
 
   return (
     <div className="main">
@@ -88,7 +97,7 @@ const SignupForm = () => {
           </div>
           <p className="for">Forgot Password?</p>
         </div>
-        <p className="e">{E}</p>
+        <p className="e">{error}</p>
 
         <ReCAPTCHA
           className="cap"

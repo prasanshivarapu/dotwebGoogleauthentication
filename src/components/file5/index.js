@@ -6,7 +6,7 @@ import SignupForm from "../file5";
 
 const GoogleAuth = () => {
   const [user, setUser] = useState(null);
-  const [profile, setProfile] = useState(null);
+  //  const [profile, setProfile] = useState(null);
   const navigate = useNavigate();
 
   const login = useGoogleLogin({
@@ -25,11 +25,8 @@ const GoogleAuth = () => {
             Accept: "application/json",
           },
         }
-      )
-        .then((res) => res.json())
-        .then((data) => {
-          setProfile(data);
-        });
+      ).then((res) => res.json());
+
       Cookies.set("token", 12345, { expires: 30 });
       navigate("/fill");
     }
@@ -37,7 +34,6 @@ const GoogleAuth = () => {
 
   const logOut = () => {
     googleLogout();
-    setProfile(null);
   };
 
   // Empty dependency array to run the effect only once
