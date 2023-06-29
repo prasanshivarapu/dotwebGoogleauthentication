@@ -11,9 +11,10 @@ const GoogleAuth = () => {
 
   const login = useGoogleLogin({
     onSuccess: (codeResponse) => setUser(codeResponse),
+
     onError: (error) => console.log("Login Failed:", error),
   });
-
+  console.log(user);
   useEffect(() => {
     if (user) {
       fetch(

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
+import ReCAPTCHA from "react-google-recaptcha";
 import GoogleAuth from "../file5";
 import { AiOutlineEye, AiOutlineEyeInvisible } from "react-icons/ai";
 import Fill from "../file3";
@@ -8,6 +9,7 @@ import "./index.css";
 
 const SignupForm = () => {
   const [profile, setProfile] = useState(null);
+  const [captchaValue, setCaptchaValue] = useState("");
   const [btn, setBtn] = useState(false);
   const [input1, setInput1] = useState("");
   const [password1, setPassword1] = useState("");
@@ -18,7 +20,9 @@ const SignupForm = () => {
   const eyeB = () => {
     setBtn((prevBtn) => !prevBtn);
   };
-
+  const handleRecaptchaChange = (value) => {
+    setCaptchaValue(value);
+  };
   const inputText = (event) => {
     setInput1(event.target.value);
   };
@@ -34,7 +38,7 @@ const SignupForm = () => {
   const loginTo = (event) => {
     event.preventDefault();
 
-    if (input1 === "prasan" && password1 === "prasan") {
+    if (input1 === "prasan" && password1 === "prasan" && captchaValue !== "") {
       Cookies.set("token", 1234, { expires: 30 });
       console.log(Cookies.get("token") === undefined);
       navigate("/fill");
@@ -85,6 +89,13 @@ const SignupForm = () => {
           <p className="for">Forgot Password?</p>
         </div>
         <p className="e">{E}</p>
+
+        <ReCAPTCHA
+          className="cap"
+          sitekey="6Ld4QtsmAAAAAARPzLjNGUBa9baKcVsLp-U4WLmu"
+          onChange={handleRecaptchaChange}
+        />
+
         <button className="button1" type="submit">
           Login
         </button>

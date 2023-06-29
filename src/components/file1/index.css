@@ -89,6 +89,10 @@
   min-width: 300px;
   height: 35px;
 }
+.cap {
+  margin: auto;
+  margin-bottom: 10px;
+}
 .button1 {
   min-width: 300px;
   height: 35px;
