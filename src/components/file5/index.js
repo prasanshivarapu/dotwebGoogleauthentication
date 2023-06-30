@@ -14,6 +14,11 @@ const GoogleAuth = () => {
 
     onError: (error) => console.log("Login Failed:", error),
   });
+
+  useEffect(() => {
+    document.title = "prasan";
+  });
+
   console.log(user);
   useEffect(() => {
     if (user) {
