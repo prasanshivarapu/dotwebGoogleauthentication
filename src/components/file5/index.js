@@ -3,6 +3,7 @@ import { googleLogout, useGoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import SignupForm from "../file5";
+import "./index.css";
 
 const GoogleAuth = () => {
   const [user, setUser] = useState(null);
@@ -30,7 +31,7 @@ const GoogleAuth = () => {
             Accept: "application/json",
           },
         }
-      ).then((res) => res.json());
+      );
 
       Cookies.set("token", 12345, { expires: 30 });
       navigate("/fill");
@@ -45,7 +46,9 @@ const GoogleAuth = () => {
 
   return (
     <div>
-      <button onClick={login}>G</button>
+      <button className="gin" onClick={login}>
+        G
+      </button>
     </div>
   );
 };
