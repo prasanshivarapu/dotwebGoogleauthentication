@@ -6,10 +6,19 @@
   background-color: white;
   border: solid;
   min-width: 200px;
-  padding: 20px;
+
   margin: 10px;
   border-color: rgb(245, 242, 242);
   border-radius: 5px;
+}
+.in {
+  color: rgb(112, 107, 107);
+}
+.in1 {
+  color: rgb(112, 107, 107);
+}
+.in2 {
+  color: rgb(112, 107, 107);
 }
 .e {
   color: red;

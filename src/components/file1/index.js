@@ -66,10 +66,10 @@ const SignupForm = () => {
 
   return (
     <div className="main">
-      <h1>Login</h1>
-      <p>Easily Using</p>
+      <h1 className="in">LOGIN</h1>
+      <p className="in1">Easily Using</p>
       <GoogleAuth />
-      <p>OR Using Account Details</p>
+      <p className="in2">OR Using Account Details</p>
       <form onSubmit={loginTo} className="main1">
         <input
           value={input1}
