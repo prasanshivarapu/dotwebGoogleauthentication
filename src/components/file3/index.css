@@ -1,6 +1,9 @@
+/* body{
+  max-width: 100%;
+} */
 .dea {
   padding: 5px;
-  width: 100%;
+  max-width: 100%;
 }
 .down {
   display: flex;
@@ -44,7 +47,7 @@
 .file {
   cursor: pointer;
   height: 150px;
-
+   width: 85%;
   border: dashed;
   border-color: green;
 }
