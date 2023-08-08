@@ -158,7 +158,7 @@ const Fill = () => {
             <label>Date of Birth (MM/DD/YYYY)</label>
             <input
               className="inputevent"
-              type="text"
+              type="Date"
               value={dob}
               onChange={(e) => Dob(e.target.value)}
             />
