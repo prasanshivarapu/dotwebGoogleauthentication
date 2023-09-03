@@ -32,6 +32,15 @@ const Fill = () => {
 
     // Perform form submission logic here
   };
+  useEffect(() => {
+    console.log(Cookies.get("token"));
+
+    if (Cookies.get("token") === undefined) {
+      navigate("/");
+    }
+  });
+
+
 
   const logout = () => {
     Cookies.remove("token");

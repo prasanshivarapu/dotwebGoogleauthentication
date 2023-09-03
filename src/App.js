@@ -6,12 +6,16 @@ import MainPage from "./components/file";
 import Fill from "./components/file3";
 import Registration from "./components/file4";
 import "./App.css";
+import Passwordtext from "./components/file7";
+
+
+
 
 const App = () => (
   <Router>
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/fill" element={<Fill />} />
+      <Route path="/fill" element={<Passwordtext />} />
       <Route path="/registration" element={<Registration />} />
     </Routes>
   </Router>

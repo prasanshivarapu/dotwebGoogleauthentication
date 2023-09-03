@@ -1,0 +1,44 @@
+.passing {
+    outline: none;
+    border: 0ch;
+  }
+  .treet11 {
+    border: dotted;
+    border-color: #b6c3ca;
+    margin-right: 20px;
+    min-height: 80px;
+    list-style: none;
+    border-width: 0.1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 180px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  .inside {
+    margin: 8px;
+  }
+  .white {
+    color: white;
+  }
+  .delete {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  .delete1 {
+    height: 20px;
+  }
+  .first {
+    border-radius: 55px;
+  
+    text-align: center;
+    background-color: rgb(33, 223, 58);
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    padding-top: 5px;
+    border-width: none;
+  }
+  
